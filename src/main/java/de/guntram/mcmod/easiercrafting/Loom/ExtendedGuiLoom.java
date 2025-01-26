@@ -209,7 +209,7 @@ public class ExtendedGuiLoom extends LoomScreen implements SlotClickAccepter {
         try {
             Files.write(Paths.get(path), recipe.toSaveString().getBytes());
             LoomRecipeRegistry.registerRecipe(recipe);
-            System.out.println(recipe.toSaveString());
+            // System.out.println(recipe.toSaveString());
             saveName.setText("");
             recipeBook.updateRecipes();
             recipeBook.updatePatternMatch();
@@ -279,7 +279,7 @@ public class ExtendedGuiLoom extends LoomScreen implements SlotClickAccepter {
             mouseX-=ExtendedGuiLoom.this.x;
             mouseY-=ExtendedGuiLoom.this.y;
             if (mouseX > x && mouseX < x+width && mouseY > y && mouseY < y+width) {
-                renderTooltip(stack, items, mouseX, mouseY);
+                ExtendedGuiLoom.this.renderTooltip(stack, items, mouseX, mouseY);
             }
         }
 

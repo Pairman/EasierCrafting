@@ -19,10 +19,6 @@
     "depends": {
       "fabric": "*"
     },
-    "recommends": {
-      "modmenu" : "*",
-      "modupdater": ">=1.1.7"        
-    },
     "name": "EasierCrafting",
     "description": "One-click Crafting",
     "icon": "icon.png",
